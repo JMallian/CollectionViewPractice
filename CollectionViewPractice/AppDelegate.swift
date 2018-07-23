@@ -12,10 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var shirleyArr = [MyDataThing]()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //load the array with some images 
+        for _ in 0...10 {
+            shirleyArr.append(MyDataThing())
+        }
+        
         return true
     }
 
