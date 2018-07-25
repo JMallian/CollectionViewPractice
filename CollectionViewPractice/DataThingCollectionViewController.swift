@@ -39,9 +39,9 @@ class DataThingCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! DataThingCollectionCell
         
+        cell.pic?.image = UIImage(named: data[indexPath.row].image)
         cell.label1?.text = data[indexPath.row].line1
         cell.label2?.text = data[indexPath.row].line2
-        cell.pic?.image = UIImage(named: data[indexPath.row].image)
         
         return cell        
     }
