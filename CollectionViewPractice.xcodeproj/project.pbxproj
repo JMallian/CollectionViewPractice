@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C01FF62210695BB00DA28AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01FF61210695BB00DA28AF /* AppDelegate.swift */; };
-		4C01FF64210695BB00DA28AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01FF63210695BB00DA28AF /* ViewController.swift */; };
 		4C01FF67210695BB00DA28AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C01FF65210695BB00DA28AF /* Main.storyboard */; };
 		4C01FF69210695C200DA28AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C01FF68210695C200DA28AF /* Assets.xcassets */; };
 		4C01FF6C210695C200DA28AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C01FF6A210695C200DA28AF /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		4C01FF5E210695BB00DA28AF /* CollectionViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C01FF61210695BB00DA28AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C01FF63210695BB00DA28AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C01FF66210695BB00DA28AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C01FF68210695C200DA28AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C01FF6B210695C200DA28AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			children = (
 				4C01FF61210695BB00DA28AF /* AppDelegate.swift */,
 				4C01FF732106997D00DA28AF /* MyDataThing.swift */,
-				4C01FF63210695BB00DA28AF /* ViewController.swift */,
 				4C01FF7521069B8E00DA28AF /* DataThingCollectionViewController.swift */,
 				4C01FF7721069BD300DA28AF /* DataThingTableViewController.swift */,
 				4C01FF65210695BB00DA28AF /* Main.storyboard */,
@@ -144,7 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C01FF64210695BB00DA28AF /* ViewController.swift in Sources */,
 				4C01FF7821069BD300DA28AF /* DataThingTableViewController.swift in Sources */,
 				4C01FF7621069B8E00DA28AF /* DataThingCollectionViewController.swift in Sources */,
 				4C01FF742106997D00DA28AF /* MyDataThing.swift in Sources */,
