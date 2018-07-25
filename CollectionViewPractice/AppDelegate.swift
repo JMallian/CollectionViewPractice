@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //load the array with some images 
-        for i in 0...10 {
+        for i in 0...20 {
             let myThing = MyDataThing(line1: "line \(i)", line2: "Shirley Manson")
             shirleyArr.append(myThing)
         }
