@@ -10,6 +10,8 @@ import UIKit
 
 class DataThingCollectionViewController: UICollectionViewController {
     
+    @IBOutlet var flowLayout: UICollectionViewFlowLayout!
+    
     var data: [MyDataThing] {
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
