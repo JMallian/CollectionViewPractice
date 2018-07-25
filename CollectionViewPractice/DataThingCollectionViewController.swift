@@ -41,7 +41,9 @@ class DataThingCollectionViewController: UICollectionViewController {
         
         cell.pic?.image = UIImage(named: data[indexPath.row].image)
         cell.label1?.text = data[indexPath.row].line1
+        cell.label1?.textColor = .yellow
         cell.label2?.text = data[indexPath.row].line2
+        cell.label2?.textColor = .yellow 
         
         return cell        
     }
