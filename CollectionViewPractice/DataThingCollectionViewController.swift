@@ -18,6 +18,20 @@ class DataThingCollectionViewController: UICollectionViewController {
         return appDelegate.shirleyArr
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let space: CGFloat = 3.0
+        let dimension = (view.frame.size.width - (2*space)) / 3.0 //3 items per row
+        
+        //set spacing between items
+        flowLayout.minimumInteritemSpacing = space
+        //set spacing between rows
+        flowLayout.minimumLineSpacing = space
+        //set size of items, which are dependent on the size of the main view
+        flowLayout.itemSize = CGSize(width: dimension, height: dimension)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }

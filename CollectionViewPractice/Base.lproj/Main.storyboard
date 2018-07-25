@@ -43,54 +43,51 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="pBJ-8S-TYI" customClass="DataThingCollectionCell" customModule="CollectionViewPractice" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="KIV-wb-hd0" customClass="DataThingCollectionCell" customModule="CollectionViewPractice" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWk-8J-kS0">
-                                            <rect key="frame" x="22" y="103" width="80" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-bf-wLA">
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="LPj-fv-X7H"/>
-                                                <constraint firstAttribute="height" constant="21" id="eoK-ii-PjO"/>
+                                                <constraint firstAttribute="height" constant="21" id="xko-mb-Di9"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aic-LW-bhb">
-                                            <rect key="frame" x="27" y="27" width="70" height="70"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="70" id="55M-R7-Hs6"/>
-                                                <constraint firstAttribute="height" constant="70" id="zFk-Hy-qhm"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vao-Os-DYI">
+                                            <rect key="frame" x="0.0" y="103" width="124" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-E2-qjm">
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-FK-KDc">
-                                            <rect key="frame" x="22" y="0.0" width="80" height="20.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="efA-Tc-Hqk"/>
-                                                <constraint firstAttribute="height" constant="20.5" id="fBe-Q6-cyk"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="e4h-FK-KDc" firstAttribute="centerX" secondItem="pBJ-8S-TYI" secondAttribute="centerX" id="59J-lZ-SkN"/>
-                                    <constraint firstItem="AWk-8J-kS0" firstAttribute="centerX" secondItem="pBJ-8S-TYI" secondAttribute="centerX" id="L3A-18-8fc"/>
-                                    <constraint firstItem="e4h-FK-KDc" firstAttribute="top" secondItem="pBJ-8S-TYI" secondAttribute="top" id="M1p-zs-FWX"/>
-                                    <constraint firstItem="aic-LW-bhb" firstAttribute="centerX" secondItem="pBJ-8S-TYI" secondAttribute="centerX" id="Rfb-l7-rdi"/>
-                                    <constraint firstItem="aic-LW-bhb" firstAttribute="centerY" secondItem="pBJ-8S-TYI" secondAttribute="centerY" id="frJ-RL-hHy"/>
-                                    <constraint firstAttribute="bottom" secondItem="AWk-8J-kS0" secondAttribute="bottom" id="fsu-lA-06T"/>
+                                    <constraint firstAttribute="bottom" secondItem="mEp-E2-qjm" secondAttribute="bottom" id="35o-ei-Hsd"/>
+                                    <constraint firstAttribute="bottom" secondItem="vao-Os-DYI" secondAttribute="bottom" id="9QZ-Fu-Ldb"/>
+                                    <constraint firstItem="iUb-bf-wLA" firstAttribute="top" secondItem="mEp-E2-qjm" secondAttribute="top" id="AHR-yA-kBS"/>
+                                    <constraint firstAttribute="trailing" secondItem="vao-Os-DYI" secondAttribute="trailing" id="JWB-Rb-esR"/>
+                                    <constraint firstItem="iUb-bf-wLA" firstAttribute="leading" secondItem="KIV-wb-hd0" secondAttribute="leading" id="QRi-dD-3hc"/>
+                                    <constraint firstItem="vao-Os-DYI" firstAttribute="top" secondItem="iUb-bf-wLA" secondAttribute="bottom" constant="82" id="WAo-pL-p7B"/>
+                                    <constraint firstItem="mEp-E2-qjm" firstAttribute="leading" secondItem="KIV-wb-hd0" secondAttribute="leading" id="cCq-fe-4XS"/>
+                                    <constraint firstItem="vao-Os-DYI" firstAttribute="leading" secondItem="KIV-wb-hd0" secondAttribute="leading" id="cJ3-H6-xgP"/>
+                                    <constraint firstItem="iUb-bf-wLA" firstAttribute="centerX" secondItem="vao-Os-DYI" secondAttribute="centerX" id="hMU-Yi-OgI"/>
+                                    <constraint firstAttribute="trailing" secondItem="mEp-E2-qjm" secondAttribute="trailing" id="pWx-74-jPN"/>
+                                    <constraint firstAttribute="trailing" secondItem="iUb-bf-wLA" secondAttribute="trailing" id="pv6-wq-BF4"/>
+                                    <constraint firstItem="mEp-E2-qjm" firstAttribute="top" secondItem="KIV-wb-hd0" secondAttribute="top" id="r7f-LM-Msc"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="label1" destination="e4h-FK-KDc" id="HW6-H4-UYd"/>
-                                    <outlet property="label2" destination="AWk-8J-kS0" id="MfJ-qY-OqJ"/>
-                                    <outlet property="pic" destination="aic-LW-bhb" id="zKl-0a-sab"/>
+                                    <outlet property="label1" destination="iUb-bf-wLA" id="jsP-pt-HZQ"/>
+                                    <outlet property="label2" destination="vao-Os-DYI" id="8Vp-cz-XtP"/>
+                                    <outlet property="pic" destination="mEp-E2-qjm" id="a3e-Yd-T6K"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -100,6 +97,9 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Collection" id="woe-8u-b1h"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="84L-FJ-Etb" id="VJv-OU-52b"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3k-OJ-3Dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
