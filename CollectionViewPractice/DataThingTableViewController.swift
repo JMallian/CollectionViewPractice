@@ -9,9 +9,7 @@
 import UIKit
 
 class DataThingTableViewController: UITableViewController {
-    //need to make custom cell
-    
-    
+
     var data: [MyDataThing] {
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
@@ -19,8 +17,22 @@ class DataThingTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! DataThingTableCell
+        
+        cell.label1?.text = "Hello"
+        cell.label2?.text = "Testing"
+        cell.pic?.image = UIImage(named: "ShirleyIcon")
+        
+        return cell
     }
     
-    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5 
+    }
+}
+
+class DataThingTableCell: UITableViewCell {
+    @IBOutlet var label1: UILabel!
+    @IBOutlet var label2: UILabel!
+    @IBOutlet var pic: UIImageView! 
 }
