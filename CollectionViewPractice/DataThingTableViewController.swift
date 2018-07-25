@@ -19,15 +19,15 @@ class DataThingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! DataThingTableCell
         
-        cell.label1?.text = "Hello"
-        cell.label2?.text = "Testing"
-        cell.pic?.image = UIImage(named: "ShirleyIcon")
+        cell.label1?.text = data[indexPath.row].line1
+        cell.label2?.text = data[indexPath.row].line2
+        cell.pic?.image = UIImage(named: data[indexPath.row].image)
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 
+        return data.count
     }
 }
 

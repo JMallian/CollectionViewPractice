@@ -9,5 +9,12 @@
 import UIKit
 
 class MyDataThing {
-    let image = UIImage(named: "ShirleyIcon")
+    let image = "ShirleyIcon"
+    var line1: String
+    var line2: String
+    
+    init(line1: String, line2: String) {
+        self.line1 = line1
+        self.line2 = line2 
+    }
 }
