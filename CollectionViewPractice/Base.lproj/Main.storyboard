@@ -20,15 +20,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="unn-Fl-uhC" kind="relationship" relationship="viewControllers" id="o41-ed-39r"/>
-                        <segue destination="dvW-qo-KNu" kind="relationship" relationship="viewControllers" id="fHH-jS-dRd"/>
+                        <segue destination="g8u-Ku-CqA" kind="relationship" relationship="viewControllers" id="o41-ed-39r"/>
+                        <segue destination="yg1-Qw-vDa" kind="relationship" relationship="viewControllers" id="fHH-jS-dRd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQ2-Kt-UBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-485" y="-66"/>
         </scene>
-        <!--Collection-->
+        <!--Data Thing Collection View Controller-->
         <scene sceneID="CEe-54-xZf">
             <objects>
                 <collectionViewController id="dvW-qo-KNu" customClass="DataThingCollectionViewController" customModule="CollectionViewPractice" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,16 +96,16 @@
                             <outlet property="delegate" destination="dvW-qo-KNu" id="2yn-1H-cFv"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Collection" id="woe-8u-b1h"/>
+                    <navigationItem key="navigationItem" id="aTa-7b-e6u"/>
                     <connections>
                         <outlet property="flowLayout" destination="84L-FJ-Etb" id="VJv-OU-52b"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3k-OJ-3Dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562.39999999999998" y="333.28335832083962"/>
+            <point key="canvasLocation" x="1501.5999999999999" y="333.28335832083962"/>
         </scene>
-        <!--Table-->
+        <!--Data Thing Table View Controller-->
         <scene sceneID="J9T-qY-jNi">
             <objects>
                 <tableViewController id="unn-Fl-uhC" customClass="DataThingTableViewController" customModule="CollectionViewPractice" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,11 +168,49 @@
                             <outlet property="delegate" destination="unn-Fl-uhC" id="mRJ-nD-wio"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Table" id="cmR-rQ-4bC"/>
+                    <navigationItem key="navigationItem" id="z6k-eI-lFl"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbk-EQ-kZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1488.8" y="-436.73163418290858"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="Nki-Zr-YX4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g8u-Ku-CqA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Table" id="cmR-rQ-4bC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e3H-7C-MLB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="unn-Fl-uhC" kind="relationship" relationship="rootViewController" id="YwN-FD-76R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wx-qZ-Fym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="549.60000000000002" y="-436.73163418290858"/>
+        </scene>
+        <!--Collection-->
+        <scene sceneID="MHz-st-1k6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yg1-Qw-vDa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Collection" id="woe-8u-b1h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CD0-Vx-MTL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dvW-qo-KNu" kind="relationship" relationship="rootViewController" id="XTl-oF-Sgr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLr-YF-BVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562.39999999999998" y="333.28335832083962"/>
         </scene>
     </scenes>
 </document>
